@@ -1,0 +1,22 @@
+<package>
+<description brief="libdaisy: DAISY descriptor library">
+This package contains the DAISY library code.
+This package is just to provide compilation options and proper include path to the ROS package.
+</description>
+<author>E. Tola. ROS package maintained by Hyon Lim.</author>
+<license>BSD</license>
+<review status="3rdparty" notes=""/>
+<url>https://github.com/limhyon/libdaisy</url>
+<export>
+  <cpp cflags="`pkg-config daisy --cflags`" lflags="`pkg-config daisy --libs`"/>
+</export>
+<versioncontrol type="git" url="https://github.com/limhyon/libdaisy"/>
+
+<platform os="ubuntu" version="9.04"/>
+<platform os="ubuntu" version="9.10"/>
+<platform os="ubuntu" version="10.04"/>
+<platform os="ubuntu" version="11.10"/>
+
+<rosdep name="libdaisy"/>
+
+</package>
